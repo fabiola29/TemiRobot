@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blu"
+    android:orientation="vertical"
+    tools:context=".views.fragment.ActivityFragment">
+
+    <!-- vertical ScrollView to make all the items or views scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <!-- LinearLayout Inside ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:background="@drawable/custom_botton"
+                    android:text=""
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.117"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/fragment_activity_textView_nameRobot"
+                    android:layout_width="532dp"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="600dp"
+                    android:gravity="center"
+                    android:text="@string/fragment_activity_name"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="395dp"
+                    android:layout_height="349dp"
+                    android:layout_marginStart="816dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.776"
+                    app:srcCompat="@drawable/icon1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_insert_activity"
+                    android:layout_width="634dp"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/blu"
+                    app:layout_constraintEnd_toEndOf="@+id/fragment_activity_textView_nameRobot"
+                    app:layout_constraintStart_toStartOf="@+id/fragment_activity_textView_nameRobot"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_activity_textView_nameRobot">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:background="#F310174E">
+
+                        <TextView
+                            android:layout_width="398dp"
+                            android:layout_height="71dp"
+                            android:gravity="center"
+                            android:text="@string/fragment_activity_insert"
+                            android:textColor="@color/green"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="137dp"
+                            android:layout_height="89dp"
+                            android:layout_marginEnd="28dp"
+                            android:src="@drawable/ic_scheduler"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.52"
+                            tools:ignore="DuplicateIds" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_view_list_activity"
+                    android:layout_width="634dp"
+                    android:layout_height="108dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/blu"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView_insert_activity"
+                    app:layout_constraintStart_toStartOf="@+id/cardView_insert_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView_insert_activity"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F310174E">
+
+                        <TextView
+                            android:layout_width="389dp"
+                            android:layout_height="73dp"
+                            android:gravity="center"
+                            android:text="@string/fragment_activity_list"
+                            android:textColor="@color/green"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                            app:layout_constraintHorizontal_bias="0.482"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.485" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="130dp"
+                            android:layout_height="77dp"
+                            android:layout_marginEnd="32dp"
+                            android:src="@drawable/ic_eyes"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.516" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

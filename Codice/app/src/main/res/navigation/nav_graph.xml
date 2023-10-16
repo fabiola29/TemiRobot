@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/RegisterOrViewActivityFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.temi1.views.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_createRouteFragment"
+            app:destination="@id/CreateRouteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_routeExecutionFragment"
+            app:destination="@id/routeExecutionFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_optionLocationFragment"
+            app:destination="@id/OptionLocationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_activityFragment"
+            app:destination="@id/ActivityFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_RegisterOrViewActivityFragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_StartPatrol"
+            app:destination="@id/PatrolFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CreateRouteFragment"
+        android:name="com.example.temi1.views.fragment.CreateRouteFragment"
+        android:label="fragment_create_route"
+        tools:layout="@layout/fragment_create_route" >
+        <action
+            android:id="@+id/action_createRouteFragment_to_homeFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PatrolFragment"
+        android:name="com.example.temi1.views.fragment.PatrolFragment"
+        android:label="fragment_start_patrol"
+        tools:layout="@layout/fragment_start_patrol">
+        <action
+            android:id="@+id/action_PatrolFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeExecutionFragment"
+        android:name="com.example.temi1.views.fragment.RouteExecutionFragment"
+        android:label="routeExecutionFragment"
+        tools:layout="@layout/route_execution_fragment" >
+
+        <argument
+            android:name="routeIdx"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_routeExecutionFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_routeExecutionFragment_to_createRouteFragment"
+            app:destination="@id/CreateRouteFragment" />
+
+        <action
+            android:id="@+id/action_routeExecutionFragment_to_RegisterOrViewActivityFragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_routeExecutionFragment_to_patrolFragment"
+            app:destination="@id/PatrolFragment" />
+        <action
+            android:id="@+id/action_routeExecutionFragment_to_ActivityFragment"
+            app:destination="@id/ActivityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OptionLocationFragment"
+        android:name="com.example.temi1.views.fragment.OptionsLocationFragment"
+        android:label="OptionLocationFragment"
+        tools:layout="@layout/fragment_option_location" >
+        <action
+            android:id="@+id/action_OptionLocationFragment_to_homeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_OptionLocationFragment_to_InsertLocationOrPointInterest"
+            app:destination="@id/InsertLocationOrPointInterest"/>
+        <action
+            android:id="@+id/action_OptionLocationFragment_to_DeleteLocationOrPointInterest"
+            app:destination="@id/DeleteLocationOrPointInterest" />
+        <action
+            android:id="@+id/action_OptionLocationFragment_to_EditLocationOrPointInterest"
+            app:destination="@id/EditLocationOrPointInterest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/InsertLocationOrPointInterest"
+        android:name="com.example.temi1.views.fragment.InsertLocationOrPointInterestFragment"
+        android:label="InsertLocationOrPointInterest"
+        tools:layout="@layout/fragment_edit_location_or_point_interest" >
+        <action
+            android:id="@+id/action_InsertLocationOrPointInterest_to_OptionLocationFragment"
+            app:destination="@id/OptionLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DeleteLocationOrPointInterest"
+        android:name="com.example.temi1.views.fragment.DeleteLocationOrPointInterestFragment"
+        android:label="DeleteLocationOrPointInterest"
+        tools:layout="@layout/fragment_delete_location_or_point_interest" >
+        <action
+            android:id="@+id/action_DeleteLocationOrPointInterest_to_OptionLocationFragment"
+            app:destination="@id/OptionLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditLocationOrPointInterest"
+        android:name="com.example.temi1.views.fragment.EditLocationOrPointInterestFragment"
+        android:label="EditLocationOrPointInterest"
+        tools:layout="@layout/fragment_edit_location_or_point_interest" >
+        <action
+            android:id="@+id/action_EditLocationOrPointInterest_to_OptionLocationFragment"
+            app:destination="@id/OptionLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ActivityFragment"
+        android:name="com.example.temi1.views.fragment.ActivityFragment"
+        android:label="ActivityFragment"
+        tools:layout="@layout/fragment_activity" >
+        <action
+            android:id="@+id/action_ActivityFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_ActivityFragment_to_RegisterOrViewActivityFragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_ActivityFragment_to_ViewListActivityFragment"
+            app:destination="@id/ViewListActivityFragment" />
+        <action
+            android:id="@+id/action_ActivityFragment_to_routeExecutionFragment"
+            app:destination="@id/routeExecutionFragment" />
+        <action
+            android:id="@+id/action_ActivityFragment_to_insertActivityFragment"
+            app:destination="@id/InsertActivityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterOrViewActivityFragment"
+        android:name="com.example.temi1.views.fragment.RegisterOrViewActivityFragment"
+        android:label="RegisterOrViewActivityFragment"
+        tools:layout="@layout/fragment_register_or_view_activity" >
+        <action
+            android:id="@+id/action_RegisterOrViewActivityFragment_to_ActivityFragment"
+            app:destination="@id/ActivityFragment" />
+        <action
+            android:id="@+id/action_RegisterOrViewActivityFragment_RegisterUserFragment"
+            app:destination="@id/RegisterUserFragment" />
+        <action
+            android:id="@+id/action_RegisterOrViewActivityfragment_to_LoginUserFragment"
+            app:destination="@id/LoginUserFragment" />
+        <action
+            android:id="@+id/action_RegisterOrViewActivityfragment_to_HomeAdminFragment"
+            app:destination="@id/ListActivityTasksFragment" />
+        <action
+            android:id="@+id/action_RegisterOrViewActivityFragment_ListActivityTasksFragment"
+            app:destination="@id/ListActivityTasksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListActivityTasksFragment"
+        android:name="com.example.temi1.views.fragment.ListActivityTasksFragment"
+        android:label="fragment_list_tasks"
+        tools:layout="@layout/fragment_list_tasks" >
+        <action
+            android:id="@+id/action_ListActivityTasksFragment_to_RegisterOrViewActivityfragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ViewListActivityFragment"
+        android:name="com.example.temi1.views.fragment.ViewListActivityFragment"
+        android:label="ViewListActivityFragment"
+        tools:layout="@layout/fragment_view_list_activity" >
+        <action
+            android:id="@+id/action_ViewActivityFragment_to_ActivityFragment"
+            app:destination="@id/ActivityFragment" />
+        <action
+            android:id="@+id/action_ViewActivityFragment_to_InsertActivityFragment"
+            app:destination="@id/InsertActivityFragment" />
+        <action
+            android:id="@+id/action_ViewActivityFragment_to_RegisterUserFragment"
+            app:destination="@id/RegisterUserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterUserFragment"
+        android:name="com.example.temi1.views.fragment.RegisterUserFragment"
+        android:label="RegisterUserFragment"
+        tools:layout="@layout/fragment_register_user" >
+
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_RegisterUserFragment_to_RegisterOrViewActivityFragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_RegisterUserFragment_to_InsertActivityFragment"
+            app:destination="@id/InsertActivityFragment" />
+        <action
+            android:id="@+id/action_RegisterUserFragment_to_RegisterUserFragment"
+            app:destination="@id/RegisterUserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/InsertActivityFragment"
+        android:name="com.example.temi1.views.fragment.InsertActivityFragment"
+        android:label="InsertActivityFragment"
+        tools:layout="@layout/fragment_insert_activity" >
+        <action
+            android:id="@+id/action_InsertActivityFragment_to_RegisterUserFragment"
+            app:destination="@id/RegisterUserFragment" />
+        <action
+            android:id="@+id/action_InsertActivityFragment_to_RegisterOrViewActivityfragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_InsertActivityFragment_to_ActivityFragment"
+            app:destination="@id/ActivityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginUserFragment"
+        android:name="com.example.temi1.views.fragment.LoginUserFragment"
+        android:label="LoginUserFragment"
+        tools:layout="@layout/fragment_login_user" >
+        <action
+            android:id="@+id/action_LoginUserFragment_to_RegisterOrViewActivityfragment"
+            app:destination="@id/RegisterOrViewActivityFragment" />
+        <action
+            android:id="@+id/action_LoginUserFragment_to_homeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+
+</navigation>

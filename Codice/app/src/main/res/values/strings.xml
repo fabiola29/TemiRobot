@@ -1,0 +1,206 @@
+<resources>
+
+    <!-- Manifest !-->
+    <string name="app_name">Temi</string>
+
+    <!-- fragment_home !-->
+    <string name="fragment_home_activity_name"> OPTION ROUTE </string>
+    <string name="fragment_home_bnt_create_route"> CREATE ROUTE </string>
+    <string name="fragment_home_bnt_start_patrol"> START PATROL </string>
+    <string name="fragment_home_bnt_option_location"> OPTIONS LOCATION OR POINT INTEREST </string>
+    <string name="fragment_home_bnt_option_scheduler"> SCHEDULER ACTIVITY</string>
+
+    <!-- fragment_create_route !-->
+    <string name="fragment_create_route_routeName"> CREATE ROUTE </string>
+    <string name="fragment_create_route_nameItinerary">Enter Name Itinerary </string>
+    <string name="fragment_create_route_patrolCount"> Patrol Count </string>
+    <string name="fragment_create_route_routeTitle"> Location </string>
+    <string name="fragment_create_route_locations"> Saved Locations </string>
+    <string name="fragment_create_route_btn_save"> SAVE </string>
+    <string name="fragment_create_route_btn_continuous_patrol"> CONTINUOUS PATROL </string>
+
+    <string name="helperCreateRouteFragment">
+         \n\n • Enter a name for the route : touch the text field to give a name to the route you are creating.
+         \n\n • Patrol count : number of times Themis navigates the route, if you deduce that she navigates the route infinite times click the "Continuous patrol" button.
+         \n\n • Location : sequence list of positions used by Themes during the patrol.
+         \n\n • Save Locations : Locations available on the map of Temi.
+         \n\n • Save : save the itinerary.
+    </string>
+
+
+    <!-- fragment_route_execution !-->
+    <string name="fragment_route_execution_nameListItinerary"> ITINERARY </string>
+
+
+    <!-- route_card_item !-->
+    <string name="route_card_item_name_route"> Title Route </string>
+    <string name="route_card_item_patrolCountCardTv"> [Patrol Count: X] </string>
+    <string name="route_card_item_routePathTv"> ROUTE </string>
+    <string name="route_card_item_delete"> Delete </string>
+    <string name="route_card_item_edit"> Edit </string>
+    <string name="route_card_item_start"> Start </string>
+    <string name="route_card_item_activity"> Activity </string>
+
+    <!-- fragment_star_patrol !-->
+    <string name="fragment_start_patrol_msg"> If you click stop I will stop for 3 minutes, then I will resume browsing. If you want to stop me permanently along the way, click the screen. </string>
+    <string name="fragment_start_patrol_stop"> STOP </string>
+
+
+    <!-- edit_button!-->
+    <string name="edit_button_edit"> Edit </string>
+
+    <!-- saved_location_card_item !-->
+    <string name="saved_location_card_item_location"> LOCATION </string>
+
+    <!-- fragment_register_or_view_activity !-->
+    <string name="fragment_register_or_view_activity_registerUser"> REGISTER USER </string>
+    <string name="fragment_register_or_view_activity_loginUser"> LOGIN USER </string>
+    <string name="fragment_register_or_view_activity_msgWelcome"> Welcome ! </string>
+    <string name="fragment_register_or_view_activity_msgWelcome2"> My name is Temi </string>
+
+    <!-- fragment_register_user!-->
+    <string name="fragment_login_user_namePages"> REGISTER USER </string>
+    <string name="fragment_register_user_nameUser">Enter Name User </string>
+    <string name="fragment_register_user_emailUser">Enter Email User </string>
+    <string name="fragment_register_user_passwordUser">Enter Password </string>
+    <string name="fragment_register_user_face"> Face </string>
+    <string name="fragment_register_user_msgPhoto">[N.B. in order to register successfully, \n you need to accept permissions to access the camera.] </string>
+    <string name="fragment_register_user_saveBtn"> SAVE </string>
+
+    <string name="helperRegisterUserFragment">
+         \n\n • Enter Name User : Tap the text field to enter your name.
+         \n\n • Enter Email User : Tap the text field to enter your email.
+         \n\n • Enter Password : Tap the text field to enter your preferred password.
+         \n\n • Face : Touch the box to insert an image of your face.
+    </string>
+
+    <!-- fragment_login_user!-->
+    <string name="fragment_login_user_namePage"> LOGIN USER </string>
+    <string name="fragment_login_user_nameUser">Enter Email User </string>
+    <string name="fragment_login_user_passwordUser">Enter Password User </string>
+    <string name="fragment_login_user_forgotPasswordBtn"><u> Forgot password?</u></string>
+    <string name="fragment_login_user_btnSave"> LOGIN </string>
+
+    <string name="helperLoginUserFragment">
+         \n\n • Enter a Email User: Tap the text field to enter your email.
+         \n\n • Enter Password : Tap the text field to enter your preferred password.
+         \n\n • Login: press it to access and enjoy the remaining functions.
+    </string>
+
+    <!-- fragment_activity !-->
+    <string name="fragment_activity_name"> OPTIONS ACTIVITY </string>
+    <string name="fragment_activity_insert"> INSERT ACTIVITY </string>
+    <string name="fragment_activity_list"> VIEW LIST ACTIVITY </string>
+    <string name="fragment_activity_logOut"> LOGOUT </string>
+
+    <!-- fragment_insert_activity !-->
+    <string name="fragment_insert_activity_name"> INSERT ACTIVITY </string>
+    <string name="fragment_insert_activity_insertNameActivity"> Enter Name Activity </string>
+    <string name="fragment_insert_activity_insertActivity"> Activity </string>
+    <string name="fragment_insert_activity_nameLocation"> Location </string>
+    <string name="fragment_insert_activity_timeActivity"> Time </string>
+    <string name="fragment_insert_activity_replayActivity"> Replay </string>
+    <string name="fragment_insert_activity_Mon"> Mon </string>
+    <string name="fragment_insert_activity_Tru"> Tur </string>
+    <string name="fragment_insert_activity_Wed"> Wed </string>
+    <string name="fragment_insert_activity_Thu"> Thu </string>
+    <string name="fragment_insert_activity_Fri"> Fri </string>
+    <string name="fragment_insert_activity_Sat"> Sat </string>
+    <string name="fragment_insert_activity_Sun"> Sun </string>
+    <string name="fragment_insert_activity_saveBtn"> SAVE </string>
+    <string name="fragment_insert_activity_DescriptionActivity"> Enter your activity </string>
+
+
+    <string name="helperInsertActivityFragment">
+        \n\n • Enter Name Activity: Tap the text field to enter name of activity.
+        \n\n • Activity: Tap the text field to enter the activity you want to remember.
+        \n\n • Location: allows you to select a position where you want to be found by the robot to notify you of the activity you are inserting as bedroom, office, kitchen and more.
+        \n\n • Time: allows you to indicate the time slot in which the activity should be notified.
+        \n\n • Replay: allows you to indicate the day on which the activity should be notified.
+    </string>
+
+    <!-- fragment_view_list_activity !-->
+    <string name="fragment_view_list_activity_name"> LIST ACTIVITY </string>
+
+    <!-- dialog_forgot_password !-->
+    <string name="dialog_forgot_password_InsertEmail">Enter email </string>
+    <string name="dialog_forgot_password_InsertPwd">Enter new password</string>
+    <string name="dialog_forgot_password_ConfirmPwd">Confirm password </string>
+    <string name="dialog_forgot_password_submitBtn">SUBMIT </string>
+
+    <!-- view_list_activity_card_item !-->
+    <string name="view_list_activity_card_item_name_activity"> Title activity </string>
+    <string name="view_list_activity_card_item_activity"> Activity </string>
+    <string name="view_list_activity_card_item_location"> Location </string>
+    <string name="view_list_activity_card_item_time"> [Time] </string>
+    <string name="view_list_activity_card_item_day"> DAY </string>
+    <string name="view_list_activity_card_item_delete"> Delete </string>
+    <string name="view_list_activity_card_item_edit"> Edit </string>
+    <string name="view_list_activity_card_item_activity1"> Activity </string>
+    <string name="view_list_activity_card_item_descriptionTask"><u>Description Task</u></string>
+
+
+    <!-- fragment_option_location !-->
+    <string name="fragment_option_location_name_view"> OPTIONS LOCATION OR POINT INTEREST </string>
+    <string name="fragment_option_location_insert"> INSERT LOCATION OR POINT INTEREST </string>
+    <string name="fragment_option_location_edit"> EDIT LOCATION OR POINT INTEREST </string>
+    <string name="fragment_option_location_delete"> DELETE LOCATION OR POINT INTEREST </string>
+
+    <!-- activity_insert_location_or_point_interest !-->
+    <string name="activity_insert_location_or_point_interest_text_title"> INSERT LOCATION OR POINT OF INTEREST  </string>
+    <string name="activity_insert_location_or_point_interest_text_point_interest"> Enter location or point interest to be insert</string>
+    <string name="activity_insert_location_or_point_interest_bnt_save"> SAVE </string>
+    <string name="activity_insert_location_or_point_interest_bnt_follow_me"> FOLLOW ME</string>
+
+    <string name="helperFragmentInsertLocationOrPointInterest">
+        \n\n • Follow me : tap the button to have the robot follow you.
+        \n\n Subsequently:
+        \n\n     • Enter location or point interest to be insert : Tap the text field to enter name of location or point interest to be insert.
+        \n\n     • Save: save the location or point interest to be insert.
+    </string>
+
+    <!-- activity_delete_location_or_point_interest !-->
+    <string name="activity_delete_location_or_point_interest_text_title"> DELETE LOCATION OR POINT OF INTEREST  </string>
+    <string name="activity_delete_location_or_point_interest_text_point_interest"> Enter point interest to be insert </string>
+    <string name="activity_delete_location_or_point_interest_bnt_save"> REMOVE </string>
+
+    <string name="helperFragmentDeleteLocationOrPointInterest">
+        \n\n • Enter location or point interest to be delete : Tap the text field to enter name of location or point interest to be delete.
+        \n\n • Remove: Remove: allows you to remove the location or point of interest or a location.
+    </string>
+
+    <!-- activity_edit_location_or_point_interest !-->
+    <string name="activity_edit_location_or_point_interest_text_title"> EDIT LOCATION OR POINT OF INTEREST  </string>
+    <string name="activity_edit_location_or_point_interest_newName_point_interest"> Enter the new location name </string>
+    <string name="activity_edit_location_or_point_interest_bnt_save"> SAVE </string>
+    <string name="activity_edit_location_or_point_interest_bnt_follow_me"> FOLLOW ME</string>
+
+    <string name="helperFragmentEditLocationOrPointInterest">
+       \n\n • Follow me : tap the button to have the robot follow you.
+        \n\n Subsequently:
+        \n\n     • Enter location or point interest to be edit : Tap the text field to enter name of location or point interest to be edit.
+        \n\n     • Save: save the location or point interest to be edit.
+    </string>
+
+    <!-- fragment_list_tasks !-->
+    <string name="fragment_list_tasks_name"> EXECUTION TASKS </string>
+
+    <!-- tasks_execution_card_item !-->
+    <string name="tasks_execution_card_item_name_tasks"> Name Activity </string>
+    <string name="tasks_execution_card_item_day_tasks">Day </string>
+    <string name="tasks_execution_card_item_taskTimeTv">Time : </string>
+    <string name="tasks_execution_card_item_time_tasks">time </string>
+    <string name="tasks_execution_card_item_Location_tasks">Location : </string>
+    <string name="tasks_execution_card_item_taskListLocationTv">location </string>
+
+
+    <!-- activity_notification !-->
+    <string name="activity_notification_name"> ACTIVITY NOTIFICATION </string>
+    <string name="activity_notification_descriptionActivity"> [Description Activity]</string>
+    <string name="fragment_activity_notification_recognition"> Check if the scheduled activity is for you !! </string>
+    <string name="fragment_activity_confirm"> CONFIRM </string>
+    <string name="fragment_activity_oToHomeBaseButton"> RETURN TO THE BASE STATION </string>
+    <string name="fragment_activity_notification_verify"> VERIFY </string>
+
+
+</resources>

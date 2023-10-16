@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragment.LoginUserFragment"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/blu"
+    android:focusableInTouchMode="true"
+    android:id="@+id/fragment_loginUserFrameLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/createRouteParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/custom_botton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="224dp"
+            android:gravity="center"
+            android:text="@string/fragment_login_user_namePage"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/fragment_loginUser_sava"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="450dp"
+            android:layout_height="57dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/custom_botton"
+            android:gravity="center"
+            android:text="@string/fragment_login_user_btnSave"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_loginUser_linearLayout"
+            app:layout_constraintVertical_bias="0.243" />
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/custom_botton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/ic_question" />
+
+        <LinearLayout
+            android:id="@+id/fragment_loginUser_linearLayout"
+            android:layout_width="793dp"
+            android:layout_height="145dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_loginUser_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.Long"
+                android:layout_width="776dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/green"
+                android:hint="@string/fragment_login_user_nameUser"
+                android:textColorHint="@color/green"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green"
+                app:hintTextColor="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.238"
+                app:startIconDrawable="@drawable/ic_user"
+                app:startIconTint="@color/green"
+                tools:ignore="MissingConstraints">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_loginUser_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/green"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_loginUser_text_input_layout_passwordActivity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.Long"
+                android:layout_width="777dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/green"
+                android:hint="@string/fragment_login_user_passwordUser"
+                android:textColorHint="@color/green"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/white"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/green"
+                app:hintTextColor="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toEndOf="@+id/fragment_loginUser_text_input_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.245"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/green"
+                tools:ignore="MissingConstraints">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_loginUser_text_input_nameActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/green"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/fragment_login_user_forgotPasswordBtn"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_loginUser_linearLayout"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="@+id/fragment_loginUser_linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_loginUser_linearLayout"
+            app:layout_constraintVertical_bias="0.508"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

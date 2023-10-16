@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blu"
+    tools:context=".views.fragment.PatrolFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+    <ImageButton
+        android:id="@+id/fragment_start_patrol_button_back"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:background="@drawable/custom_botton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117"
+        app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="1053dp"
+            android:layout_height="433dp"
+            android:gravity="center"
+            android:text="@string/fragment_start_patrol_msg"
+            android:textColor="#FFFFFF"
+            android:textSize="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <Button
+            android:id="@+id/fragment_stop_patrol"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="407dp"
+            android:layout_height="65dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_botton"
+            android:gravity="center"
+            android:text="@string/fragment_start_patrol_stop"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.126"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

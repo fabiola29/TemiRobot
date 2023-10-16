@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blu"
+    android:orientation="vertical"
+    tools:context=".views.fragment.OptionsLocationFragment">
+
+    <!-- vertical ScrollView to make all the items or views scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <!-- LinearLayout Inside ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:background="@drawable/custom_botton"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.033"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.117"
+                        app:srcCompat="@drawable/ic_back" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_textView_nameRobot"
+                        android:layout_width="619dp"
+                        android:layout_height="115dp"
+                        android:layout_marginTop="156dp"
+                        android:layout_marginEnd="592dp"
+                        android:gravity="center"
+                        android:text="@string/fragment_option_location_name_view"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="395dp"
+                        android:layout_height="349dp"
+                        android:layout_marginStart="816dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.776"
+                        app:srcCompat="@drawable/icon1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_insert_location_or_pointInterest"
+                        android:layout_width="634dp"
+                        android:layout_height="108dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/blu"
+                        app:layout_constraintEnd_toEndOf="@+id/fragment_home_textView_nameRobot"
+                        app:layout_constraintStart_toStartOf="@+id/fragment_home_textView_nameRobot"
+                        app:layout_constraintTop_toBottomOf="@+id/fragment_home_textView_nameRobot">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="108dp"
+                            android:background="#F310174E">
+
+                            <TextView
+                                android:layout_width="361dp"
+                                android:layout_height="75dp"
+                                android:gravity="center"
+                                android:text="@string/fragment_option_location_insert"
+                                android:textColor="@color/green"
+                                android:textSize="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="179dp"
+                                android:layout_height="107dp"
+                                android:layout_marginEnd="4dp"
+                                android:src="@drawable/ic_add_location"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                tools:ignore="DuplicateIds" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_edit_location_or_pointInterest"
+                        android:layout_width="634dp"
+                        android:layout_height="108dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/blu"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView_insert_location_or_pointInterest"
+                        app:layout_constraintStart_toStartOf="@+id/cardView_insert_location_or_pointInterest"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView_insert_location_or_pointInterest"
+                        tools:ignore="MissingConstraints">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#F310174E">
+
+                            <TextView
+                                android:layout_width="337dp"
+                                android:layout_height="76dp"
+                                android:gravity="center"
+                                android:text="@string/fragment_option_location_edit"
+                                android:textColor="@color/green"
+                                android:textSize="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                                app:layout_constraintHorizontal_bias="0.519"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.346" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="182dp"
+                                android:layout_height="107dp"
+                                android:layout_marginEnd="4dp"
+                                android:src="@drawable/ic_edit_location"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_delete_location_or_pointInterest"
+                        android:layout_width="634dp"
+                        android:layout_height="108dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="305dp"
+                        android:background="@color/blu"
+                        app:layout_constraintEnd_toEndOf="@+id/fragment_home_textView_nameRobot"
+                        app:layout_constraintStart_toStartOf="@+id/fragment_home_textView_nameRobot"
+                        app:layout_constraintTop_toBottomOf="@+id/fragment_home_textView_nameRobot">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="108dp"
+                            android:background="#F310174E">
+
+                            <TextView
+                                android:layout_width="342dp"
+                                android:layout_height="73dp"
+                                android:gravity="center"
+                                android:text="@string/fragment_option_location_delete"
+                                android:textColor="@color/green"
+                                android:textSize="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="179dp"
+                                android:layout_height="107dp"
+                                android:layout_marginEnd="4dp"
+                                android:src="@drawable/ic_remove_location"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                tools:ignore="DuplicateIds" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

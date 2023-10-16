@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragment.ActivityFragment"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/blu"
+    android:focusableInTouchMode="true"
+    android:id="@+id/fragment_insert_activityFrameLayout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/createRouteParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/custom_botton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/ic_back" />
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:gravity="center"
+            android:text="@string/fragment_insert_activity_name"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/spinnerActivityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="388dp"
+            android:text="@string/fragment_insert_activity_insertActivity"
+            android:textColor="@color/green"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/LocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="552dp"
+            android:text="@string/fragment_insert_activity_nameLocation"
+            android:textColor="@color/green"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            style="@style/spinner_style"
+            android:layout_width="250dp"
+            android:layout_height="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintStart_toEndOf="@+id/spinnerActivityTv"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_insert_activity_linearLayout"
+            app:layout_constraintVertical_bias="0.564"
+            tools:ignore="MissingConstraints">
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="235dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="556dp"
+                android:backgroundTint="@color/white"
+                android:popupBackground="@color/blu"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_create_route_button_sava"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="174dp"
+            android:layout_height="54dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/custom_botton"
+            android:gravity="center"
+            android:text="@string/fragment_insert_activity_saveBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_insert_activity_linearLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:background="@drawable/custom_botton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.982"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.117"
+            app:srcCompat="@drawable/ic_question" />
+
+
+        <TextView
+            android:id="@+id/TimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_insert_activity_timeActivity"
+            android:textColor="@color/green"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/LocationTv"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="@+id/LocationTv"
+            app:layout_constraintTop_toBottomOf="@+id/LocationTv"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <CheckBox
+            android:id="@+id/fragment_createTask_recurring"
+            android:layout_width="404dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="2dp"
+            android:buttonTint="@color/white"
+            android:checked="false"
+            android:text="@string/fragment_insert_activity_replayActivity"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.212"
+            app:layout_constraintStart_toEndOf="@+id/fragment_createTask_timePickerLayout"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_insert_activity_linearLayout"
+            app:layout_constraintVertical_bias="0.839" />
+
+        <LinearLayout
+            android:id="@+id/fragment_createTask_recurring_options"
+            android:layout_width="456dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="55dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_createTask_recurring"
+            app:layout_constraintStart_toStartOf="@+id/fragment_createTask_recurring"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createTask_recurring">
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Mon"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Tru"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_ccreateTask_checkWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Wed"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Thu"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Fri"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkSat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Sat"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/fragment_createTask_checkSun"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:buttonTint="@color/white"
+                android:text="@string/fragment_insert_activity_Sun"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_createTask_timePickerLayout"
+            android:layout_width="268dp"
+            android:layout_height="139dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="MissingConstraints">
+
+            <TimePicker
+                android:id="@+id/fragment_creatTask_timePicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="#131943"
+                android:theme="@style/MyTimePicker"
+                android:timePickerMode="spinner"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="593dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_insert_activity_linearLayout"
+            android:layout_width="1184dp"
+            android:layout_height="106dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.663"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_insert_activity_text_input_layout_nameActivity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.Long"
+                android:layout_width="1166dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/green"
+                android:hint="@string/fragment_insert_activity_insertNameActivity"
+                android:textColorHint="@color/green"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/green"
+                app:hintTextColor="@color/green"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.271"
+                app:layout_constraintStart_toEndOf="@+id/fragment_insert_activity_text_input_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.245"
+                app:startIconDrawable="@drawable/ic_activity"
+                app:startIconTint="@color/green"
+                tools:ignore="MissingConstraints">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_insert_activity_text_input_nameActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/green"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_insert_activity_descriptionActivity_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.Long"
+            android:layout_width="274dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:hint="@string/fragment_insert_activity_DescriptionActivity"
+            android:textColorHint="@color/green"
+            app:boxBackgroundColor="@color/blu"
+            app:boxStrokeColor="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:counterTextAppearance="@style/CounterTextAppearance"
+            app:counterTextColor="@color/white"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorIconDrawable="@null"
+            app:hintTextColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="270dp"
+                android:layout_height="155dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp"
+                app:counterMaxLength="1000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
