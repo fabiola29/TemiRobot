@@ -1,2 +1,2 @@
 # TemiRobot
-Applicazione per temi robot in Android Studio realizzata per il tirocinio
+Applicazione per temi robot in Android Studio con titolo "PERSONALIZZAZIONE DEI COMPORTAMENTI ROBOTICI IN BASE ALLO SCHEDULING DELLE ATTIVITÀ QUOTIDIANE DEGLI UTENTI"
