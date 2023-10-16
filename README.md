@@ -18,3 +18,11 @@ Implementato facendo uso di :
    - Python 3 per registrazione e riconoscimento volto utente facendo uso della libreria fece recognition
    - Room database per la persistenza dei dati
    - sdk Temi per include funzionalità interne del robot nell'applicazione
+
+Utilizzando inoltre per l'architettura esterna l'approccio a tre livelli in cui abbiamo:  
+
+  - livello presentazione che si occupa dell'interazione con l'utente
+  - livello di logica che si occupa della logica di business
+  - livello dati che si occupa della persistenza dei dati
+  
+mentre per l'architettura interna un design pattern architetturale chiamato MVVM (Model View ViewModel) attraverso cui , è possibile trarre vantaggio in termini di prestazioni, leggibilità e modularità del codice.
